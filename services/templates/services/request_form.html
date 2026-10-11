@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Request Tracker</title>
+</head>
+<body>
+    <h1>Make a Hotel Request</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <p><a href="/requests/">View all requests</a></p>
+</body>
+</html>

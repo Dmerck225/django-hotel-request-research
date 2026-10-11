@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request Submitted</title>
+</head>
+<body>
+    <h1>Request Submitted</h1>
+
+    <p>Your {{ service_request.request_type }} request for room {{ service_request.room_number }} was submitted.</p>
+    <p>Current status: {{ service_request.status }}</p>
+
+    <p><a href="/">Make another request</a></p>
+    <p><a href="/requests/">View all requests</a></p>
+</body>
+</html>
